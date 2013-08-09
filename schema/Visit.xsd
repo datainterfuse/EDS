@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema targetNamespace="org.di.demo.visit" xmlns="org.di.demo.visit" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+				<xs:element name="VisitList">
+								<xs:complexType>
+												<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="1" name="Visit" type="VisitElement"/>
+												</xs:sequence>
+								</xs:complexType>
+				</xs:element>
+				<xs:complexType name="VisitElement">
+								<xs:sequence>
+												<xs:element minOccurs="1" name="admitDate" type="xs:string"/>
+												<xs:element minOccurs="0" name="dischargeDate" type="xs:string"/>
+												<xs:element minOccurs="1" name="diagnosis" type="xs:string"/>
+								</xs:sequence>
+				</xs:complexType>
+</xs:schema>

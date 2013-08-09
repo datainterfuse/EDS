@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation" xmlns:vxmldoc="http://www.metamatrix.com/metamodels/XmlDocument" xmlns:xsd="http://www.eclipse.org/xsd/2002/XSD">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:61ea9cc7-2918-47bd-bbfe-a4a53c707e91" primaryMetamodelUri="http://www.metamatrix.com/metamodels/XmlDocument" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="8.1.0.Final-v20130426-1937-B2271">
+    <modelImports xmi:uuid="mmuuid:4c333313-ead7-46fa-9426-eb1032beb12d" name="Vitals" modelLocation="../schema/Vitals.xsd" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:b9babedd-1e01-4ed6-b753-e819118aa35c" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:ebd7cbd9-1d96-4ad8-9b58-b545ba76acd5" name="Virtual" modelLocation="../virtual/Virtual.xmi" uuid="mmuuid:d2061bfe-a030-487c-b8ff-638aa0682c5d" modelType="VIRTUAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+  </mmcore:ModelAnnotation>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:971cfc32-50ba-4730-ab77-17c36e15e61e" name="PatientVitalsDocument">
+    <root xmi:uuid="mmuuid:5846b0c0-6a87-48e8-b613-003c84cd48aa" name="PatientVitals" namespace="mmuuid/9908e469-31f0-448b-8ea4-964c7b319fa7">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Vitals.xsd#//PatientVitals;XSDElementDeclaration"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:2fe69257-82bf-4aad-9809-944cd480a3c8">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:3131e093-cf35-4052-9a8d-358b36e3aed6" name="vitals">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Vitals.xsd#//PatientVitals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/vitals;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:e11c71c9-6d4b-4ba5-80c4-1dd070b32094">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:6dfdf515-f9d4-4985-be53-117068ad3778" name="pulse">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Vitals.xsd#//VitalsElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/pulse;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:32476d83-8f9a-4d18-8420-e41881dfc815" name="systolicBP">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Vitals.xsd#//VitalsElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/systolicBP;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:99a7fe52-82c2-4312-bbb5-abfe64cffe4e" name="diastolicBP">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Vitals.xsd#//VitalsElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/diastolicBP;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="../schema/Vitals.xsd#//VitalsElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="../schema/Vitals.xsd#//PatientVitals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:9908e469-31f0-448b-8ea4-964c7b319fa7" prefix="org.di.demo" uri="org.di.demo.vitals"/>
+      <declaredNamespaces xmi:uuid="mmuuid:c9692bd1-7444-41a8-a6ad-2feecdfdcea2" prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+    </root>
+  </vxmldoc:XmlDocument>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:13eca9ab-27ec-4bc2-bb99-7e6b02f8297c">
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:98cb44a4-823a-4afc-824b-37560d7759aa" inputs="mmuuid/751dec28-d8d1-4025-9256-98383c2847f6" outputs="mmuuid/3131e093-cf35-4052-9a8d-358b36e3aed6" target="mmuuid/971cfc32-50ba-4730-ab77-17c36e15e61e">
+      <nested xmi:uuid="mmuuid:4fcc1810-3aa9-4427-9347-5dc43bbc9b71" inputs="mmuuid/37340c12-a0a2-4fa1-9152-2da7264adcf6" outputs="mmuuid/6dfdf515-f9d4-4985-be53-117068ad3778"/>
+      <nested xmi:uuid="mmuuid:661602e5-6325-4f24-968a-61ea9b2c7a7a" inputs="mmuuid/a3afa338-ee7e-439c-b5e1-1dac919a71af" outputs="mmuuid/32476d83-8f9a-4d18-8420-e41881dfc815"/>
+      <nested xmi:uuid="mmuuid:9abba97d-99b1-4901-9847-45f7d95667e8" inputs="mmuuid/988ce822-edfb-4721-8168-8f5ed71aaa3e" outputs="mmuuid/99a7fe52-82c2-4312-bbb5-abfe64cffe4e"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:44d0ffab-de88-4250-b2b7-7f5d22a80c7c" outputs="mmuuid/751dec28-d8d1-4025-9256-98383c2847f6" target="mmuuid/751dec28-d8d1-4025-9256-98383c2847f6">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:9d6adea1-d77d-4070-b6c3-2a10439df7cc">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:91ca8b67-3f92-469b-a730-e174497612a7" selectSql="SELECT &quot;Virtual&quot;.vitals.pulse, convert(&quot;Virtual&quot;.vitals.systolic_bp, biginteger) AS systolicBP, convert(&quot;Virtual&quot;.vitals.diastolic_bp, biginteger) AS diastolicBP FROM &quot;Virtual&quot;.vitals"/>
+        <aliases xmi:uuid="mmuuid:35b8e1b6-f642-4d36-a0c2-1c9a8c692bf6" alias="vitals">
+          <aliasedObject href="../virtual/Virtual.xmi#mmuuid/e4b936b5-1f70-4bcc-951a-6b9d794d2c6e"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:3b3db8a6-f63c-4922-8569-68d4a83f8327" outputs="mmuuid/37340c12-a0a2-4fa1-9152-2da7264adcf6">
+        <inputs href="../virtual/Virtual.xmi#mmuuid/f2a514bc-81de-4f8e-8493-63294550a61c"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:2589e8b2-ae7d-4dbd-bc9c-3d345bd378bf" outputs="mmuuid/a3afa338-ee7e-439c-b5e1-1dac919a71af">
+        <inputs href="../virtual/Virtual.xmi#mmuuid/f9767843-1952-4225-92c5-e5a5cdb7017c"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:651d7c4b-fd33-41e1-a352-c6bc8f505027" outputs="mmuuid/988ce822-edfb-4721-8168-8f5ed71aaa3e">
+        <inputs href="../virtual/Virtual.xmi#mmuuid/b1d64a1c-d6f7-43f8-b568-cce0910d5828"/>
+      </nested>
+      <inputs href="../virtual/Virtual.xmi#mmuuid/e4b936b5-1f70-4bcc-951a-6b9d794d2c6e"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <transformation:MappingClassSetContainer xmi:uuid="mmuuid:52e74ffe-0857-4eed-a113-97b8083bee4b">
+    <mappingClassSets xmi:uuid="mmuuid:82cdef1e-a406-472f-97da-a60b2f2ef9d3" target="mmuuid/971cfc32-50ba-4730-ab77-17c36e15e61e">
+      <mappingClasses xmi:uuid="mmuuid:751dec28-d8d1-4025-9256-98383c2847f6" name="vitals">
+        <columns xmi:uuid="mmuuid:37340c12-a0a2-4fa1-9152-2da7264adcf6" name="pulse">
+          <type href="http://www.w3.org/2001/XMLSchema#double"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:a3afa338-ee7e-439c-b5e1-1dac919a71af" name="systolicBP">
+          <type href="http://www.w3.org/2001/XMLSchema#integer"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:988ce822-edfb-4721-8168-8f5ed71aaa3e" name="diastolicBP">
+          <type href="http://www.w3.org/2001/XMLSchema#integer"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:a2cbd389-a283-45ca-8979-ed9d275478b3"/>
+      </mappingClasses>
+    </mappingClassSets>
+  </transformation:MappingClassSetContainer>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:1c099027-8031-4150-9e6a-258f6c6774ef"/>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:162639be-f720-4756-8598-03593a9d7e50">
+    <diagram xmi:uuid="mmuuid:65394a2a-de7e-4539-b7d9-9301d9e2fa11" type="packageDiagramType" target="mmuuid/61ea9cc7-2918-47bd-bbfe-a4a53c707e91">
+      <diagramEntity xmi:uuid="mmuuid:d9ac3a4c-177d-4cc2-84b9-8deb7c3aef80" modelObject="mmuuid/971cfc32-50ba-4730-ab77-17c36e15e61e" xPosition="10" yPosition="10"/>
+    </diagram>
+  </diagram:DiagramContainer>
+</xmi:XMI>

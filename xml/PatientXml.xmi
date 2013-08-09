@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation" xmlns:vxmldoc="http://www.metamatrix.com/metamodels/XmlDocument" xmlns:xsd="http://www.eclipse.org/xsd/2002/XSD">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:9561dc27-bb45-4890-b45e-c899a1bcd920" primaryMetamodelUri="http://www.metamatrix.com/metamodels/XmlDocument" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="8.1.0.Final-v20130426-1937-B2271">
+    <modelImports xmi:uuid="mmuuid:e6b3bf4d-23f9-42d8-a015-6a5d2db5636e" name="Patient" modelLocation="../schema/Patient.xsd" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:81146882-50f0-4377-b948-e1811dd4ceec" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:3f114b4c-615b-421b-a484-e2e8e4fda52f" name="Virtual" modelLocation="../virtual/Virtual.xmi" uuid="mmuuid:d2061bfe-a030-487c-b8ff-638aa0682c5d" modelType="VIRTUAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+  </mmcore:ModelAnnotation>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:b2a0889f-f89f-45f7-a2e2-9c44ae496856" name="PatientListDocument">
+    <root xmi:uuid="mmuuid:384498a7-4267-4f99-a12b-5e0b5c138310" name="PatientList" namespace="mmuuid/b0f52245-2419-43a8-a945-ad9ff9c3b1f8">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Patient.xsd#//PatientList;XSDElementDeclaration"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:063ace77-3a66-4ea2-9945-4f8bf6073409">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:88dfa81d-4a3d-4698-b124-221e3b652386" name="Patient">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Patient.xsd#//PatientList;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/Patient;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:69c577ce-7ef6-422f-b3ab-cb45b86858bd">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:a14d1bb7-a8ec-41fa-add8-e064a7ce81c4" name="firstName">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Patient.xsd#//PatientElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/firstName;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:086681dc-767a-4bd0-a53a-21cd91562148" name="lasttName">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Patient.xsd#//PatientElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/lasttName;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:00cb306f-2cae-4770-8e99-e009cd33d4d2" name="middleName">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Patient.xsd#//PatientElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/middleName;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:2a7bc4a5-2a80-4264-8e4c-50c5a0d73691" name="ssn">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Patient.xsd#//PatientElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/ssn;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:6715e303-898d-4b80-a592-0335bd6e464b" name="sex">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Patient.xsd#//PatientElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4/sex;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:d130dd28-3905-4b6a-baaa-b3b5eab5a2a3" name="dob">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="../schema/Patient.xsd#//PatientElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5/dob;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="../schema/Patient.xsd#//PatientElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="../schema/Patient.xsd#//PatientList;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:b0f52245-2419-43a8-a945-ad9ff9c3b1f8" prefix="org.di.demo" uri="org.di.demo.patient"/>
+      <declaredNamespaces xmi:uuid="mmuuid:35b7eafd-8bc2-4379-96e7-7cd94743f3e5" prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+    </root>
+  </vxmldoc:XmlDocument>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:fb0d1824-3c6b-44a3-9c42-dc0c6923ea2c">
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:6ebdac5e-a453-415d-8c12-bd0633a17b82" inputs="mmuuid/362fcbed-e34f-452b-b3da-181a0394e8b7" outputs="mmuuid/88dfa81d-4a3d-4698-b124-221e3b652386" target="mmuuid/b2a0889f-f89f-45f7-a2e2-9c44ae496856">
+      <nested xmi:uuid="mmuuid:c64cfc96-c16b-496e-848f-38f6c49213cc" inputs="mmuuid/103256c6-c8f7-4180-8f22-9ee87cca23aa" outputs="mmuuid/a14d1bb7-a8ec-41fa-add8-e064a7ce81c4"/>
+      <nested xmi:uuid="mmuuid:a9b6b7d4-d8bf-418b-9718-23e439e747fe" inputs="mmuuid/1905bd3e-77c3-48a4-82a0-52bcb034ec03" outputs="mmuuid/086681dc-767a-4bd0-a53a-21cd91562148"/>
+      <nested xmi:uuid="mmuuid:9f17fb05-6c9d-43fc-afb5-89e6c7d583cc" inputs="mmuuid/5da9f486-0838-4181-9fbf-bdcbd5b76eef" outputs="mmuuid/00cb306f-2cae-4770-8e99-e009cd33d4d2"/>
+      <nested xmi:uuid="mmuuid:8d3da37b-3fa0-4c40-a45a-6fdbe17abdb5" inputs="mmuuid/ba586c4c-01c8-4360-8344-c1bb7a68ab0c" outputs="mmuuid/2a7bc4a5-2a80-4264-8e4c-50c5a0d73691"/>
+      <nested xmi:uuid="mmuuid:4c4e62a0-6eb0-4e4a-af94-740eb3b660a3" inputs="mmuuid/9df278c9-ff1b-4cf7-a95a-bd205dff35d1" outputs="mmuuid/6715e303-898d-4b80-a592-0335bd6e464b"/>
+      <nested xmi:uuid="mmuuid:1c4bb57a-4e1e-4994-adf3-6ce84dda10a0" inputs="mmuuid/6c2b8a64-0d06-431b-baa8-d887828616e1" outputs="mmuuid/d130dd28-3905-4b6a-baaa-b3b5eab5a2a3"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:2f273a01-8637-47a7-b092-4fc6c0b43560" outputs="mmuuid/362fcbed-e34f-452b-b3da-181a0394e8b7" target="mmuuid/362fcbed-e34f-452b-b3da-181a0394e8b7">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:f7de914f-05bc-4e6a-a23d-b563c9729326">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:31f9c760-c467-40c5-9f1b-34a3aa89f79d" selectSql="SELECT &quot;Virtual&quot;.person.first_name AS firstName, &quot;Virtual&quot;.person.last_name AS lasttName, &quot;Virtual&quot;.person.middle_name AS middleName, &quot;Virtual&quot;.person.ssn, &quot;Virtual&quot;.person.sex, convert(&quot;Virtual&quot;.person.dob, string) AS dob FROM &quot;Virtual&quot;.person"/>
+        <aliases xmi:uuid="mmuuid:84583f07-d97b-45a2-90c9-fbc3128807af" alias="person">
+          <aliasedObject href="../virtual/Virtual.xmi#mmuuid/039c5ab1-157c-4852-9180-1cbdf1c754b5"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:bbf4b17b-fd51-4b58-8b16-dd07eb2e0e70" outputs="mmuuid/103256c6-c8f7-4180-8f22-9ee87cca23aa">
+        <inputs href="../virtual/Virtual.xmi#mmuuid/d5279520-3092-470b-92a9-28e7608edd79"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:a3654784-087b-4125-ba6b-59f3fa185136" outputs="mmuuid/1905bd3e-77c3-48a4-82a0-52bcb034ec03">
+        <inputs href="../virtual/Virtual.xmi#mmuuid/fc333d00-7089-48bc-8fe7-3d0a98143494"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:8383f4ab-f7f5-4279-b839-9d2d3ba31a4e" outputs="mmuuid/5da9f486-0838-4181-9fbf-bdcbd5b76eef">
+        <inputs href="../virtual/Virtual.xmi#mmuuid/53e5ed6f-bbea-410f-9d7e-a09ac6a5fb7d"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:e497089e-af12-4836-bfb8-160557e87c2b" outputs="mmuuid/ba586c4c-01c8-4360-8344-c1bb7a68ab0c">
+        <inputs href="../virtual/Virtual.xmi#mmuuid/20024ec1-f4a9-486e-8e54-3669cfc736ab"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:d1be0f00-f5d9-4679-8ff3-307d5a7c8e63" outputs="mmuuid/9df278c9-ff1b-4cf7-a95a-bd205dff35d1">
+        <inputs href="../virtual/Virtual.xmi#mmuuid/3f342e2c-5418-4df9-b6d1-e88bcd0fd79b"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:8c358d96-bf3f-4547-a550-ee0f995e5428" outputs="mmuuid/6c2b8a64-0d06-431b-baa8-d887828616e1">
+        <inputs href="../virtual/Virtual.xmi#mmuuid/bea24008-606f-4971-886c-eeb5f5c51c80"/>
+      </nested>
+      <inputs href="../virtual/Virtual.xmi#mmuuid/039c5ab1-157c-4852-9180-1cbdf1c754b5"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <transformation:MappingClassSetContainer xmi:uuid="mmuuid:f3f99f37-2d4e-49ab-82e6-3a34d895e417">
+    <mappingClassSets xmi:uuid="mmuuid:e5ae23cc-1f09-46f9-8a87-046f8d66bbd8" target="mmuuid/b2a0889f-f89f-45f7-a2e2-9c44ae496856">
+      <mappingClasses xmi:uuid="mmuuid:362fcbed-e34f-452b-b3da-181a0394e8b7" name="Patient">
+        <columns xmi:uuid="mmuuid:103256c6-c8f7-4180-8f22-9ee87cca23aa" name="firstName">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:1905bd3e-77c3-48a4-82a0-52bcb034ec03" name="lasttName">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:5da9f486-0838-4181-9fbf-bdcbd5b76eef" name="middleName">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:ba586c4c-01c8-4360-8344-c1bb7a68ab0c" name="ssn">
+          <type href="../schema/Patient.xsd#//PatientElement;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/ssn;XSDElementDeclaration/XSDSimpleTypeDefinition"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:9df278c9-ff1b-4cf7-a95a-bd205dff35d1" name="sex">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:6c2b8a64-0d06-431b-baa8-d887828616e1" name="dob">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:ea467745-8aad-4dcb-ad3a-fc18e16b97aa"/>
+      </mappingClasses>
+    </mappingClassSets>
+  </transformation:MappingClassSetContainer>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:2fbb194a-096b-4fe0-8942-c27e8f8d4200"/>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:62f53be9-e46a-4464-9647-2ab8b9ab87b1">
+    <diagram xmi:uuid="mmuuid:f703c80e-d95f-45e3-82cd-86a01ea89e74" type="packageDiagramType" target="mmuuid/9561dc27-bb45-4890-b45e-c899a1bcd920">
+      <diagramEntity xmi:uuid="mmuuid:63f372c9-f974-466c-8a34-5f0783012b51" modelObject="mmuuid/b2a0889f-f89f-45f7-a2e2-9c44ae496856" xPosition="10" yPosition="10"/>
+    </diagram>
+  </diagram:DiagramContainer>
+</xmi:XMI>

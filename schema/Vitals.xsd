@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema targetNamespace="org.di.demo.vitals" xmlns="org.di.demo.vitals" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+				<xs:element name="PatientVitals">
+								<xs:complexType>
+												<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="1" name="vitals" type="VitalsElement"/>
+												</xs:sequence>
+								</xs:complexType>
+				</xs:element>
+				<xs:complexType name="VitalsElement">
+								<xs:sequence>
+												<xs:element minOccurs="0" name="pulse" type="xs:double"/>
+												<xs:element minOccurs="0" name="systolicBP" type="xs:integer"/>
+												<xs:element minOccurs="0" name="diastolicBP" type="xs:integer"/>
+								</xs:sequence>
+				</xs:complexType>
+</xs:schema>
